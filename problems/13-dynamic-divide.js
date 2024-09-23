@@ -19,7 +19,10 @@ divideByFive(50); // returns 10
 ***********************************************************************/
 
 function dynamicDivide(divisor) {
-  // Your code here
+  let div = divisor; 
+  return function(numerator) {
+    return numerator / divisor;
+  }
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
