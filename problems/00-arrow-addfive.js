@@ -15,7 +15,7 @@ let result3 = addFive(37); // returns 42
 
 ***********************************************************************/
 
-let addFive = (num) => {
+const addFive = (num) => {
   return num += 5;
 }
 
