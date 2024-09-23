@@ -18,7 +18,12 @@ sandwich2("pb") // => "One sandwich with tomato and pb"
 ***********************************************************************/
 
 function sandwichMaker() {
-  // Your code here
+  let sandwich = ['tomato']; 
+  
+  return function(string) {
+    sandwich.push(string);
+    return 'One sandwich with ' + sandwich.join(' and ') ;
+  };
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

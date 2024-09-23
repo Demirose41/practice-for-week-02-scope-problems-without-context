@@ -20,7 +20,20 @@ console.log(rudePerson2("I love dogs")); // prints "I yo love yo dogs"
 ***********************************************************************/
 
 function interrupter(interruptingWord) {
-  // Your code here
+  
+  return function(sentence) {
+    let splitSentence = sentence.split(' ');
+    let newSentence = [];
+    for ( let i = 0; i < splitSentence.length ; i++ ){
+      let word = splitSentence[i] 
+      if (i === splitSentence.length - 1 ){
+        newSentence.push(word);
+      }else {
+        newSentence.push(word + ' ' + interruptingWord )
+      }
+    }
+    return newSentence.join(' ');
+  }
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
